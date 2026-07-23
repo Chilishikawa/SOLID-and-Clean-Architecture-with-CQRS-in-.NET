@@ -27,6 +27,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetLeaveType
                 throw new NotFoundException(nameof(LeaveType), request.Id);
 
             // Convert data objects to DTO objects
+
             var data = _mapper.Map<LeaveTypeDetailsDto>(leaveType);
 
             // Return list of DTO object
